@@ -6,6 +6,7 @@
     height: 100px;
     background-color: #FFFFFF;
   }
+
   .messages{
     height: calc(100vh - 190px);
     background-color: #FAFAFA;
@@ -35,8 +36,7 @@
           font-size: 1.3rem;
           &__file{
             display: none;
-          }
-        }
+          }      
       }
       .submit-btn{
         width: 100px;
