@@ -80,12 +80,10 @@ $('#new_message').on('submit', function(e){
           });
           $('.messages').append(insertHTML);
           $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
-          $("#new_message")[0].reset();
-          $(".form__submit").prop("disabled", false);
         }
       })
     .fail(function() {
-      console.log('error');
+      console.log('alert');
   });
   };
   var buildHTML = function(message) {
@@ -136,10 +134,6 @@ $('#new_message').on('submit', function(e){
           `<img src="` + message.image + `" class="lower-message__image" >` +
         `</div>` +
       `</div>`
-    };
-    return html;
-  };
-  setInterval(reloadMessages, 7000);
   if (document.location.href.match(/\/groups\/\d+\/messages/)) {
     setInterval(reloadMessages, 7000);
   }
