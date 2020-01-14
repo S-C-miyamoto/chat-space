@@ -83,7 +83,7 @@ $('#new_message').on('submit', function(e){
         }
       })
     .fail(function() {
-      console.log('alert');
+      alert('error');
   });
   };
   var buildHTML = function(message) {
@@ -134,6 +134,7 @@ $('#new_message').on('submit', function(e){
           `<img src="` + message.image + `" class="lower-message__image" >` +
         `</div>` +
       `</div>`
+    }
   if (document.location.href.match(/\/groups\/\d+\/messages/)) {
     setInterval(reloadMessages, 7000);
   }
