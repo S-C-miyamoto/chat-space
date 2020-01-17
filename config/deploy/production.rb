@@ -58,4 +58,3 @@ server '3.113.75.18', user: 'ec2-user', roles: %w{app db web}
 #     forward_agent: false,
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
-#   }
